@@ -1,0 +1,32 @@
+﻿  main.c
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(236,34): warning C4090: 'fonction' : qualificateurs 'const' différents
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(241,25): warning C4090: 'fonction' : qualificateurs 'const' différents
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(263,24): warning C4090: 'fonction' : qualificateurs 'const' différents
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(386,43): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(467,125): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(477,125): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(452,33): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(452,48): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(462,35): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(462,51): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(472,35): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(472,51): warning C4244: 'initialisation' : conversion de 'unsigned int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(534,29): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(739,39): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(740,36): warning C4244: '+=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(744,24): warning C4305: '+=' : troncation de 'double' à 'float'
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(745,35): warning C4244: '+=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(760,30): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(766,17): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(781,33): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(781,45): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(910,29): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1115,39): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1116,36): warning C4244: '+=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1120,24): warning C4305: '+=' : troncation de 'double' à 'float'
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1121,35): warning C4244: '+=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1136,30): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1142,17): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1157,33): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\Game\main.c(1157,45): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+  Game.vcxproj -> C:\Users\Etudiant1\Desktop\abosio\Prog1\CSFML_BackUp\Sprite\x64\Debug\Game.exe
