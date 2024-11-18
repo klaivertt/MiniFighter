@@ -20,8 +20,13 @@
 #define PRINT(x, text) if (!(x)) { printf("DEBUG: %s\n", text); }
 #define PRINT_M(text) printf("DEBUG: %s\n", text)
 #else if RELEASE
+<<<<<<< HEAD
 #define PRINT(x, text)
 #define PRINT_M(text)
+=======
+	#define PRINT(x, text)
+	#define PRINT_M(text)
+>>>>>>> d0ff6715b7b9ae33cd51e905243f56769589c2a7
 #endif
 
 #pragma endregion
@@ -745,10 +750,17 @@ void PlayerMouvementUpdate(float _dt, Player* const _player)
 	_player->y += _player->velocityY * _dt;
 
 	sfVector2u textureSize = sfTexture_getSize(_player->animation.currentAnimation->texture);
+<<<<<<< HEAD
 	int h = (textureSize.x / _player->animation.currentAnimation->frameCount) / 2;
 	if (_player->x - (h / 2) < 0)
 	{
 		_player->x = h / 2;
+=======
+	int h = (textureSize.x / _player->animation.currentAnimation->frameCount)/2;
+	if (_player->x - (h/2) < 0)
+	{
+		_player->x = h/2;
+>>>>>>> d0ff6715b7b9ae33cd51e905243f56769589c2a7
 	}
 	else if (_player->x > SCREEN_WIDTH - (h / 2))
 	{
@@ -939,13 +951,21 @@ void LoadPlayer2Animations(Player* const _player)
 	SetupAnimation(&_player->animation.heavyKick, "Assets/Sprites/Ken_Heavy_Kick.png", 5, 0.085f, sfFalse);
 
 	SetupAnimation(&_player->animation.crouchingLightPunch, "Assets/Sprites/Ken_Crouching_Light_Punch.png", 3, 0.085f, sfFalse);
+<<<<<<< HEAD
 	SetupAnimation(&_player->animation.crouchingHeavyPunch, "Assets/Sprites/Ken_Crouching_Heavy_Punch.png", 5, 0.1f, sfFalse);
+=======
+	SetupAnimation(&_player->animation.crouchingHeavyPunch, "Assets/Sprites/Ken_Crouching_Heavy_Punch.png", 4, 0.1f, sfFalse);
+>>>>>>> d0ff6715b7b9ae33cd51e905243f56769589c2a7
 	SetupAnimation(&_player->animation.crouchingLightKick, "Assets/Sprites/Ken_Crouching_Medium_Kick.png", 3, 0.085f, sfFalse);
 	SetupAnimation(&_player->animation.crouchingHeavyKick, "Assets/Sprites/Ken_Crouching_Heavy_Kick.png", 5, 0.085f, sfFalse);
 
 	SetupAnimation(&_player->animation.jump, "Assets/Sprites/Ken_Jump.png", 2, 0.4f, sfFalse);
 	SetupAnimation(&_player->animation.jumpingPunch, "Assets/Sprites/Ken_Jump_Punch.png", 3, 0.11f, sfFalse);
+<<<<<<< HEAD
 	SetupAnimation(&_player->animation.jumpingKick, "Assets/Sprites/Ken_Jump_Kick.png", 1, 0.11f, sfFalse);
+=======
+	SetupAnimation(&_player->animation.jumpingKick, "Assets/Sprites/Ken_Jump_Kick.png", 3, 0.11f, sfFalse);
+>>>>>>> d0ff6715b7b9ae33cd51e905243f56769589c2a7
 
 	SetupAnimation(&_player->animation.walk, "Assets/Sprites/Ken_walk.png", 2, 0.15f, sfTrue);
 	SetupAnimation(&_player->animation.walkLeft, "Assets/Sprites/Ken_walk_left.png", 2, 0.15f, sfTrue);
@@ -1012,7 +1032,11 @@ void Player2OnKeyPressed(sfKeyEvent _key, GameData* const _gameData)
 			{
 				player->animation.currentAnimation = &player->animation.heavyPunch;
 			}
+<<<<<<< HEAD
 			player->animationTime = 0;
+=======
+			player->animationTime = 0; 
+>>>>>>> d0ff6715b7b9ae33cd51e905243f56769589c2a7
 			if (Collision(_gameData))
 			{
 				_gameData->player.health -= HEAVY_ATTAQUE;
@@ -1038,7 +1062,11 @@ void Player2OnKeyPressed(sfKeyEvent _key, GameData* const _gameData)
 			{
 				player->animation.currentAnimation = &player->animation.lightKick;
 			}
+<<<<<<< HEAD
 			player->animationTime = 0;
+=======
+			player->animationTime = 0; 
+>>>>>>> d0ff6715b7b9ae33cd51e905243f56769589c2a7
 			if (Collision(_gameData))
 			{
 				_gameData->player.health -= LIGHT_ATTAQUE;
