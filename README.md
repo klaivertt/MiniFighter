@@ -9,7 +9,7 @@ Bienvenue sur mon projet de première année en programmation de jeux vidéo ! C
 
 ## 🕹️ Fonctionnalités actuelles
 
-- **Personnage jouable :** Ryu (sprites tirés de Street Fighter 2).
+- **Personnage jouable :** Ryu et Ken (sprites tirés de Street Fighter 2).
 - **Mouvements de base :** 
   - Déplacement à gauche et à droite.
   - Animations d'attaque.
