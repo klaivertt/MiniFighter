@@ -383,7 +383,7 @@ void SetupAnimation(Animation* _anim, const char* _filepath, int _frameCount, fl
 
 	sfSprite_setTextureRect(_anim->sprite, rect);
 
-	sfVector2f origin = { (frameWidth / 2.0f) / _frameCount, frameHeight };
+	sfVector2f origin = { frameWidth / 2.0f, frameHeight };
 	sfSprite_setOrigin(_anim->sprite, origin);
 }
 
@@ -745,14 +745,14 @@ void PlayerMouvementUpdate(float _dt, Player* const _player)
 	_player->y += _player->velocityY * _dt;
 
 	sfVector2u textureSize = sfTexture_getSize(_player->animation.currentAnimation->texture);
-	int h = textureSize.x / 2;
-	if (_player->x < 0)
+	int h = (textureSize.x / _player->animation.currentAnimation->frameCount)/2;
+	if (_player->x - (h/2) < 0)
 	{
-		_player->x = 0;
+		_player->x = h/2;
 	}
-	else if (_player->x > SCREEN_WIDTH - h / 3)
+	else if (_player->x > SCREEN_WIDTH - (h / 2))
 	{
-		_player->x = SCREEN_WIDTH - h / 3;
+		_player->x = SCREEN_WIDTH - h / 2;
 	}
 
 	if (_player->y >= SCREEN_HEIGHT * 0.9f)
@@ -1121,14 +1121,14 @@ void Player2MouvementUpdate(float _dt, Player* const _player)
 	_player->y += _player->velocityY * _dt;
 
 	sfVector2u textureSize = sfTexture_getSize(_player->animation.currentAnimation->texture);
-	int h = textureSize.x / 2;
-	if (_player->x < 0)
+	int h = (textureSize.x / _player->animation.currentAnimation->frameCount) / 2;
+	if (_player->x - (h / 2) < 0)
 	{
-		_player->x = 0;
+		_player->x = (h / 2);
 	}
-	else if (_player->x > SCREEN_WIDTH - h / 3)
+	else if (_player->x > SCREEN_WIDTH - (h / 2))
 	{
-		_player->x = SCREEN_WIDTH - h / 3;
+		_player->x = SCREEN_WIDTH - (h / 2);
 	}
 
 	if (_player->y >= SCREEN_HEIGHT * 0.9f)
@@ -1320,6 +1320,7 @@ void Reset(GameData* _gameData)
 {
 	//_gameData = { 0 };
 	LoadPlayer(&_gameData->player);
+	LoadPlayer(&_gameData->player2);
 	LoadHud(&_gameData->hud);
 	LoadBackground(&_gameData->background);
 	_gameData->gameOver = sfFalse;
